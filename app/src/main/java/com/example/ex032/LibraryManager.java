@@ -1,12 +1,16 @@
 package com.example.ex032;
 
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class LibraryManager {
-    public static void main(String[]args)
-    {
+public class LibraryManager extends AppCompatActivity {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         Map<UUID, LibraryItem> inventory = new HashMap<>();
         Book b1 = new Book(1997, "Harry Potter and the Philosopher's Stone", "J. K. Rowling", 223);
         Book b2 = new Book(1997, "Harry Potter and the Chamber of Secrets", "J. K. Rowling", 251);
