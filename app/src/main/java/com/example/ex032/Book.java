@@ -10,6 +10,22 @@ public class Book extends LibraryItem implements Searchable, Displayable{
         this.numOfPages = numOfPages;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getNumOfPages() {
+        return numOfPages;
+    }
+
+    public void setNumOfPages(int numOfPages) {
+        this.numOfPages = numOfPages;
+    }
+
     @Override
     public void displayFullDetails() {
         System.out.println(toString());
